@@ -22,13 +22,13 @@ Custom Scripts: Bash and Expect scripts for parsing Zeek logs, sending alerts to
 
 # Installation :
 
-# Install Zeek:
+Install Zeek:
 Follow the Zeek installation guide to install and configure Zeek on your system.
 
-# Install TheHive:
+Install TheHive:
 Follow the TheHive installation guide to set up TheHive
 
-# Install Dependencies:
+Install Dependencies:
 Install necessary dependencies using:
 sudo apt-get install expect
 sudo apt-get install python3
