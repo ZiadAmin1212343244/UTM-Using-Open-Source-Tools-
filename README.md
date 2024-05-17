@@ -8,28 +8,22 @@ This project implements a Unified Threat Management (UTM) suite using open-sourc
 Features :
 
 Network Traffic Monitoring: Uses Zeek to monitor and analyze network traffic.
-
 Alert Management: Integrates with TheHive for managing and responding to security alerts.
-
 Automated Incdient Response: Custom scripts for parsing logs, generating alerts, and isolating compromised machines.
 
 Incident Containment: Automated scripts to isolate infected machines by disabling their network interfaces.
 
 Architecture :
 The UTM suite consists of the following components:
-
 Zeek: A powerful network analysis tool for monitoring network traffic and generating logs.
-
 TheHive: An alert management system for correlating and responding to security events.
-
 Custom Scripts: Bash and Expect scripts for parsing Zeek logs, sending alerts to TheHive, and isolating compromised machines.
 
 Installation :
 Install Zeek:
 Follow the Zeek installation guide to install and configure Zeek on your system.
-
 Install TheHive:
-Follow the TheHive installation guide to set up TheHive.
+Follow the TheHive installation guide to set up TheHive
 
 Install Dependencies:
 Install necessary dependencies using:
@@ -45,14 +39,12 @@ Configure the local.zeek script to include custom signature rules.
 Custom Scripts:
 Update the custom scripts (send_alerts_tohive.sh, isolate_vm.sh, and ssh_sudo_expect.sh) with the appropriate paths and credentials.
 
-
 TheHive Configuration:
 
 Configure TheHive to accept alerts from the custom scripts.
 Update TheHive API keys and endpoint URLs in the scripts.
 
 Testing :
-
 Simulate Attacks:
 
 Use tools like Nmap and Hydra from a Kali Linux machine to simulate various network attacks (e.g., SYN scans, SSH brute force, FTP brute force).
