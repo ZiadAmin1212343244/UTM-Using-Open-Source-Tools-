@@ -1,11 +1,11 @@
 # UTM-Using-Open-Source-Tools
 UTM Project 
 
-Project Overview :
+# Project Overview :
 
 This project implements a Unified Threat Management (UTM) suite using open-source tools to provide comprehensive network security. The suite integrates Zeek for network traffic monitoring, TheHive for alert management, and custom scripts for automated threat response and isolation.
 
-Features :
+# Features :
 
 Network Traffic Monitoring: Uses Zeek to monitor and analyze network traffic.
 Alert Management: Integrates with TheHive for managing and responding to security alerts.
@@ -13,25 +13,28 @@ Automated Incdient Response: Custom scripts for parsing logs, generating alerts,
 
 Incident Containment: Automated scripts to isolate infected machines by disabling their network interfaces.
 
-Architecture :
+# Architecture :
+
 The UTM suite consists of the following components:
 Zeek: A powerful network analysis tool for monitoring network traffic and generating logs.
 TheHive: An alert management system for correlating and responding to security events.
 Custom Scripts: Bash and Expect scripts for parsing Zeek logs, sending alerts to TheHive, and isolating compromised machines.
 
-Installation :
-Install Zeek:
+# Installation :
+
+# Install Zeek:
 Follow the Zeek installation guide to install and configure Zeek on your system.
-Install TheHive:
+
+# Install TheHive:
 Follow the TheHive installation guide to set up TheHive
 
-Install Dependencies:
+# Install Dependencies:
 Install necessary dependencies using:
 sudo apt-get install expect
 sudo apt-get install python3
 
 
-Configuration :
+# Configuration :
 Zeek Configuration:
 Edit the node.cfg file in the Zeek installation directory to monitor the desired network interfaces.
 Configure the local.zeek script to include custom signature rules.
@@ -44,7 +47,7 @@ TheHive Configuration:
 Configure TheHive to accept alerts from the custom scripts.
 Update TheHive API keys and endpoint URLs in the scripts.
 
-Testing :
+# Testing :
 Simulate Attacks:
 
 Use tools like Nmap and Hydra from a Kali Linux machine to simulate various network attacks (e.g., SYN scans, SSH brute force, FTP brute force).
