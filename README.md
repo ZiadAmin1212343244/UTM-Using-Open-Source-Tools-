@@ -8,15 +8,20 @@ This project implements a Unified Threat Management (UTM) suite using open-sourc
 Features :
 
 Network Traffic Monitoring: Uses Zeek to monitor and analyze network traffic.
+
 Alert Management: Integrates with TheHive for managing and responding to security alerts.
+
 Automated Incdient Response: Custom scripts for parsing logs, generating alerts, and isolating compromised machines.
+
 Incident Containment: Automated scripts to isolate infected machines by disabling their network interfaces.
 
 Architecture :
 The UTM suite consists of the following components:
 
 Zeek: A powerful network analysis tool for monitoring network traffic and generating logs.
+
 TheHive: An alert management system for correlating and responding to security events.
+
 Custom Scripts: Bash and Expect scripts for parsing Zeek logs, sending alerts to TheHive, and isolating compromised machines.
 
 Installation :
